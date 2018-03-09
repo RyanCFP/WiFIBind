@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.idx.wifibind.activity.DeviceActivity"
+    tools:showIn="@layout/activity_device"
+    android:background="#d0d0d0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/device_bind_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="设备绑定"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageButton
+            android:id="@+id/device_bind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/device_add"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/wifi_link_view0_background"
+            android:layout_below="@+id/device_bind_show"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="当前已绑定设备"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_below="@+id/divider"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <View
+            android:id="@+id/divider_item1"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/wifi_link_view1_background"
+            android:layout_below="@+id/tv_show" />
+
+        <RelativeLayout
+            android:id="@+id/rl_device_bind_none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/divider_item1"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/device_bind_none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="当前没有绑定任何设备，请点击"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/device_bind_none_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/device_bind_none"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/device_add" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/bind_device_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/divider_item1"
+            android:divider="@drawable/recyclerview_divider" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

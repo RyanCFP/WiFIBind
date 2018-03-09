@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center_vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--android:layout_margin="10dp"-->
+
+    <TextView
+        android:id="@+id/wifi_item_ssid_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SSID名称"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/wifi_item_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/wifi_item_ssid_name"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBottom="@+id/wifi_item_ssid_name"
+        android:text="(未连接)"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/wifi_item_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@mipmap/icon_wifi_right"/>
+
+</RelativeLayout>

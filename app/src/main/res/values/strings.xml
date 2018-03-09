@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WiFIBind</string>
+    <string name="device_Add"> device add</string>
+    <string name="device_bind">device bind</string>
+    <string name="tab_home_title">device</string>
+    <string name="tab_setting_title">setting</string>
+    <string name="setting_user_info">user info</string>
+    <string name="setting_about">about</string>
+    <string name="setting_logout">logout</string>
+    <string name="about_version">Version</string>
+</resources>

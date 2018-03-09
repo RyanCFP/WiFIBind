@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="wifi_connect_color">#3F51B5</color>
+    <color name="wifi_unconnect_color">#3C3F41</color>
+    <color name="wifi_link_view0_background">#FF8700</color>
+    <color name="wifi_link_view1_background">#2A2A2A</color>
+</resources>

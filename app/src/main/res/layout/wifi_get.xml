@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d0d0d0">
+
+    <ImageView
+        android:id="@+id/wifi_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        app:srcCompat="@mipmap/wifi_icon" />
+
+    <TextView
+        android:id="@+id/current_wifi_ssid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wifi_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:padding="5dp"
+        android:hint="请输入Wi-Fi密码，连接你的智能设备"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/ll_wifi_ssid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/current_wifi_ssid"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/wifi_ssid_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="49dp"
+            android:layout_gravity="bottom"
+            app:srcCompat="@mipmap/icon_wifi_right" />
+
+        <EditText
+            android:id="@+id/wifi_ssid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_alignBottom="@+id/wifi_ssid_icon"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/wifi_ssid_icon"
+            android:ems="10"
+            android:background="@null"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:hint="wifi ssid name"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/wifi_list"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/button_more"
+            android:layout_marginRight="49dp"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:layout_below="@+id/ll_wifi_ssid"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/divider"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/wifi_password_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="49dp"
+            app:srcCompat="@mipmap/wifi_user_password" />
+
+        <EditText
+            android:id="@+id/wifi_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/wifi_ssid_icon"
+            android:layout_alignBottom="@+id/wifi_password_icon"
+            android:layout_gravity="bottom"
+            android:background="@null"
+            android:gravity="center"
+            android:ems="10"
+            android:hint="wi-fi password"
+            android:inputType="textPassword"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/wifi_password_show_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/wifi_password_hide"
+            android:layout_marginRight="49dp"
+            android:layout_gravity="bottom"
+            android:button="@null"
+            android:paddingLeft="2dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/wifi_device_get"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_show_next"
+            android:layout_marginStart="49dp"
+            android:layout_marginEnd="49dp"
+            android:textSize="18sp"
+            android:text="下一步" />
+    </LinearLayout>
+</RelativeLayout>

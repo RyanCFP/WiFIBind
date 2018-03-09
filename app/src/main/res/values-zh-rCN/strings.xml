@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WiFIBind</string>
+    <string name="device_bind">设备绑定</string>
+    <string name="device_Add">添加设备</string>
+    <string name="tab_home_title">设备</string>
+    <string name="tab_setting_title">设置</string>
+    <string name="setting_user_info">用户信息</string>
+    <string name="setting_about">关于</string>
+    <string name="setting_logout">退出</string>
+    <string name="about_version">版本</string>
+</resources>
